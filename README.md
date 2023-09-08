@@ -8,7 +8,7 @@ This [Home Assistant](https://www.home-assistant.io/) integration allows you to 
 
 **Method 1.** [HACS](https://hacs.xyz/) custom repo:
 
-> HACS > Integrations > 3 dots (upper top corner) > Custom repositories > URL: `gurgelx/powerplanner_ha_integration`, Category: Integration > Add > wait > PowerPlanner > Install
+> HACS > Integrations > 3 dots (upper top corner) > Custom repositories > URL: `gurgelx/powerplanner_ha_integration`, Category: Integration > Add > wait > PowerPlanner > Download
 
 **Method 2.** Manually copy `powerplanner` folder under `custom_components` from [latest release](https://github.com/gurgelx/powerplanner_ha_integration) to `/config/custom_components` folder.
 
