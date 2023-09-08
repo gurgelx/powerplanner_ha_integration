@@ -1,0 +1,1 @@
+Test if HACS crash beacause of the readme.md
