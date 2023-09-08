@@ -4,6 +4,8 @@ This [Home Assistant](https://www.home-assistant.io/) integration allows you to 
 
 ## Installation
 
+[![hacs_badge](https://img.shields.io/badge/HACS-Custom-41BDF5.svg)](https://github.com/hacs/integration)
+
 **Method 1.** [HACS](https://hacs.xyz/) custom repo:
 
 > HACS > Integrations > 3 dots (upper top corner) > Custom repositories > URL: `gurgelx/powerplanner_ha_integration`, Category: Integration > Add > wait > PowerPlanner > Install
