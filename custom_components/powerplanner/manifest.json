@@ -1,13 +1,13 @@
 {
-  "domain": "powerplanner",
-  "name": "PowerPlanner",
-  "codeowners": ["@gurgelx"],
-  "config_flow": true,
-  "dependencies": [],
-  "documentation": "https://www.home-assistant.io/integrations/powerplanner",
-  "integration_type": "device",
-  "iot_class": "cloud_polling",
-  "requirements": ["powerplanner-lib==0.0.8"],
-  "issue_tracker": "https://github.com/gurgelx/powerplanner_ha_integration/issues",
-  "version": "0.0.0"
+    "domain": "powerplanner",
+    "name": "PowerPlanner",
+    "codeowners": ["@gurgelx"],
+    "config_flow": true,
+    "dependencies": [],
+    "documentation": "https://www.home-assistant.io/integrations/powerplanner",
+    "integration_type": "device",
+    "iot_class": "cloud_polling",
+    "requirements": ["powerplanner-lib==0.0.9"],
+    "issue_tracker": "https://github.com/gurgelx/powerplanner_ha_integration/issues",
+    "version": "0.0.0"
 }
