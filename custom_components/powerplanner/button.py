@@ -1,11 +1,10 @@
 """Button for force sync the schedules."""
 
-from powerplanner import PowerplannerHub
-
 from homeassistant.components.button import ButtonEntity
 from homeassistant.config_entries import ConfigEntry
 from homeassistant.core import HomeAssistant
 from homeassistant.helpers.entity_platform import AddEntitiesCallback
+from powerplanner import PowerplannerHub
 
 from .binary_sensor import UpdateCoordinator
 from .const import DOMAIN
@@ -33,7 +32,7 @@ class PowerplannerSyncButton(PowerPlannerEntityBase, ButtonEntity):
         hub: PowerplannerHub,
     ) -> None:
         """Init syncbutton."""
-        PowerPlannerEntityBase.__init__(self, hash(hub.api_key))
+        PowerPlannerEntityBase.__init__(self, hub.api_key)
         self._attr_name = "Sync powerplanner"
         self._attr_unique_id = f"sync-button_{config_entry.entry_id}"
         self.config_entry = (config_entry,)

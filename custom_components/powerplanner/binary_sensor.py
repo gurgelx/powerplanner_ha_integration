@@ -1,11 +1,11 @@
 """Power planner plan sensor."""
+
 from datetime import datetime, timedelta
 import logging
 from threading import Timer
 
 import aiohttp
 import async_timeout
-from powerplanner import PowerplannerHub
 
 from homeassistant.components.binary_sensor import (
     BinarySensorDeviceClass,
@@ -20,6 +20,7 @@ from homeassistant.helpers.update_coordinator import (
     DataUpdateCoordinator,
 )
 from homeassistant.util import slugify
+from powerplanner import PowerplannerHub
 
 from .const import DOMAIN
 from .entity import PowerPlannerEntityBase
@@ -47,7 +48,7 @@ class PPSensorEntity(PowerPlannerEntityBase, CoordinatorEntity, BinarySensorEnti
 
     def __init__(self, coordinator, schedule_name, hub: PowerplannerHub) -> None:
         """Init with a reference to the schedulename."""
-        PowerPlannerEntityBase.__init__(self, hash(hub.api_key))
+        PowerPlannerEntityBase.__init__(self, hub.api_key)
         CoordinatorEntity.__init__(self, coordinator, context=schedule_name)
 
         self._attr_is_on = False
